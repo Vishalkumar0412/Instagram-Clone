@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-400 font-nav"> 
+  <!-- header and navbar  section> -->
+   <!-- mobile header -->
+    <header class="bg-black border-b border-gray-600 h-14  flex md:hidden items-center justify-between   w-full  px-2        "">
+          <div id="logo" class="w-32 max-w-24 min-w-20 flex py-2 min-h-full ml-3  h-full">
+            <img class="min-h-fit " src="src/assets/logoWhite.png" alt="logo">
+          </div>
+          <div id="SeachAndAction" class=" flex flex-1 items-center justify-end min-w-72 " >
+            <!-- search -->
+            <div id="search" class="rounded-lg min-h-9 max-h-9 py-3 px-3 min-w-56 flex bg-zinc-800 justify-between relative items-center">
+          <label id="searchIcon" for="searchInput">  <i class="fa-solid fa-magnifying-glass text-sm text-gray-500 max-w-3 m-1"></i></label>
+          <input type="text" class="bg-transparent px-2 outline-none text-white text-sm" placeholder="Search" id="searchInput" >
+        <div id="xIconSearch" class=" hidden justify-center items-center bg-slate-500 z-50 rounded-full max-h-4 max-w-4 absolute min-h-4 cursor-pointer min-w-4 text-gray-800 text-[0.7rem] right-5">x</div>
+      </div>
+       
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in items-center text-white justify-evenly">
+        <!-- notification element -->
+        <i class="fa-regular fa-heart p-2 text-2xl transition-all duration-200 ease-in  hover:scale-105" title="Notifications" ></i>
+      
+        </div>
+      </a>
+        </div>
+        <nav id="navbarMD" class="min-h-11 border-t border-gray-600 max-h-11 flex w-full justify-between items-center flex-auto fixed bottom-0 px-6 bg-black left-0">
+          <!-- Nav bar started -->
+            <a href="#" class="rounded-lg min-h-9 max-h-9  my-2 flex font-bold items-center text-white justify-evenly">
+              <!-- home element -->
+              <i class="fa-solid fa-house p-2  text-2xl transition-all duration-200 ease-in  hover:scale-105 " title="Home" ></i>
+             
+            </a>
+          
+            <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 items-center text-white justify-evenly">
+              <!-- explore element -->
+              <i class="fa-regular fa-compass p-2 text-2xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
+           
+            </a>
+            <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 items-center text-white justify-evenly">
+              <!--  reel element -->
+              <span class="material-symbols-outlined p-2 text-2xl transition-all duration-200 ease-in  hover:scale-105 " title="Reels" >
+                movie
+                </span>
+          
+            </a>
+            <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 items-center text-white justify-evenly">
+              <!-- create element -->
+              <i class="fa-regular fa-square-plus p-2 text-2xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
+            
+            </a>
+            <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2  items-center text-white justify-evenly relative">
+              <!-- messages element -->
+           <i class="fa-brands fa-facebook-messenger p-2 text-2xl transition-all duration-200 ease-in  hover:scale-105 block  relative" title="messages"></i>
+              <!-- message counter -->
+              <span id="messagebubble"  class="min-h-4 mim-w-4 max-h-4 p-1 font-bold max-w-4 text-[0.5rem] absolute bg-red-600 top-1 left-7  flex items-center justify-center rounded-full">1</span>
+          
+            </a>
+            
+           
+      
+            <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2  items-center text-white justify-evenly">
+              <!-- profile element -->
+             <img src="src/assets/user.jpg" alt="user-image" class="h-9 w-9 p-1 transition-all duration-200 ease-in  hover:scale-105 rounded-full" title="Profile" >
+              
+            </a>
+        
+           
+          
+          </nav>
+    </header>
+    <!-- desktop site header and nav  -->
+ <header id="headerPC" class= "py-1 bg-black transition-all duration-200 ease-in  md:flex hidden h-screen px-2 fixed flex-col border-r border-gray-600 w-52">
+  <!-- logoContainer -->
+   <div id="logoPC"class="py-10 px-3 max-h-14 min-h-2">
+    <img id="logoImgPC" class="max-h-10 " src="src/assets/logoWhite.png" alt="logo">
+   </div>
+   <nav id="navbarPC" class="min-h-60 flex flex-col justify-start flex-auto">
+    <!-- Nav bar started -->
+      <a id="homeBtnPC" href="#" class="rounded-lg min-h-9 max-h-9  my-2 flex font-bold transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!-- home element -->
+        <i class="fa-solid fa-house p-2  text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Home" ></i>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+              Home
+        </div>
+      </a>
+      <a href="#" id="searchPC" class="rounded-lg  min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!--search  element -->
+        <i class="fa-solid fa-magnifying-glass p-2 text-xl font-light transition-all duration-200 ease-in  hover:scale-105" title="Seach" ></i>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+             Search
+        </div>
+      </a>
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!-- explore element -->
+        <i class="fa-regular fa-compass p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+              Explore
+        </div>
+      </a>
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!--  reel element -->
+        <span class="material-symbols-outlined p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Reels" >
+          movie
+          </span>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+            Reel
+        </div>
+      </a>
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2  transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly relative">
+        <!-- messages element -->
+     <i class="fa-brands fa-facebook-messenger p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 block  relative" title="messages"></i>
+        <!-- message counter -->
+        <span id="messagebubble"  class="min-h-4 mim-w-4 max-h-4 p-1 font-bold max-w-4 text-[0.5rem] absolute bg-red-600 top-1 left-7  flex items-center justify-center rounded-full">1</span>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+          Messages
+        </div>
+      </a>
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!-- notification element -->
+        <i class="fa-regular fa-heart p-2 text-xl transition-all duration-200 ease-in  hover:scale-105" title="Notifications" ></i>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+           Notifications
+        </div>
+      </a>
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!-- create element -->
+        <i class="fa-regular fa-square-plus p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+              Create
+        </div>
+      </a>
+
+      <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+        <!-- profile element -->
+       <img src="src/assets/user.jpg" alt="user-image" class="h-9 w-9 p-1 transition-all duration-200 ease-in - hover:scale-105 rounded-full" title="Profile" >
+        <div class="font-nav flex-1 p-2 pt-3 text-s">
+          <!-- element text -->
+             Profile
+        </div>
+      </a>
+  
+     
+    
+    </nav>
+    <a id="morePC" href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+      <!--more options element -->
+      <i class="fa-solid fa-bars p-2 text-2xl justify-self transition-all duration-200 ease-in  hover:scale-105  " title="More" ></i>
+      <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <!-- element text -->
+          More
+      </div>
+    </a>
+ </header>
+
+<!-- mian page -->
+ <main class="bg-black h-screen md:h-full md:absolute md:top-0  md:left-52 md:max-w-3xl md:px-20 overflow-y-scroll">
+<!-- userImageSlider -->
+
+<section id="userImageSliderSection" class="h-20 w-full p-2 px-4 max-h-20 overflow-hidden box-border bg-black flex  relative items-center md:mt-4 ">
+  <div id="nextPrevBtn"> 
+   <span id="userImagePrev" class="hidden"> > </span>
+    <span id="userImageNext" class="hidden"> > </span>
+
+   </div>
+
+    <div class="flex flex-col item-center m-0.5 p-2 min-h-16 min-w-16 justify-center overflow-hidden" >
+      <!-- user 1-->
+    <img class="min-h-12 min-w-12 rounded-full border border-red-800 border-double" src="src/assets/user.jpg" alt="">
+    <span class="text-white text-[0.600rem] text-center text-nowrap pt-0.5 flex justify-center items-center">mahesh kuamr </span>
+    
+  </div>
+  
+
+   
+  </section>
+  <section id="postSection" class="w-full min-h-full  px-8 mt-3 pt-4" >
+    <!-- post cards -->
+    <div class="bg-black min-h-screen p-2 px-4 my-2 border ">
+      <!-- user details Section -->
+       <div class="flex justify-between items-center md:px-2 h-12">
+              <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
+              </a>
+                <!-- useridCaption -->
+              
+               <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
+              <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+              <span class="text-white text-[0.700rem] font-light">Live in agra </span>
+              
+               </a>
+            <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
+           
+       </div>
+          <!-- img vdo section  -->
+           <div class="border  min:h-72 flex justify-center px-3 py-0">
+            <img src="https://picsum.photos/200/300" alt="">
+
+           </div>
+           post detais section
+
+  </div><div class="bg-black min-h-screen p-2 px-4 my-2 border ">
+    <!-- user details Section -->
+     <div class="flex justify-between items-center md:px-2 h-12">
+            <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
+            </a>
+              <!-- useridCaption -->
+            
+             <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
+            <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+            <span class="text-white text-[0.700rem] font-light">Live in agra </span>
+            
+             </a>
+          <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
+         
+     </div>
+        <!-- img vdo section  -->
+         <div>
+
+         </div>
+         post detais section
+
+</div><div class="bg-black min-h-screen p-2 px-4 my-2 border ">
+  <!-- user details Section -->
+   <div class="flex justify-between items-center md:px-2 h-12">
+          <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
+          </a>
+            <!-- useridCaption -->
+          
+           <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
+          <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+          <span class="text-white text-[0.700rem] font-light">Live in agra </span>
+          
+           </a>
+        <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
+       
+   </div>
+      <!-- img vdo section  -->
+       <div>
+
+       </div>
+       post detais section
+
+</div>
+
+  </section>
+  
+
+ </main>
+<script src="src/app.js"></script>
+</body>
+</html>
