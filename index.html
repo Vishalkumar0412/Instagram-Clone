@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-gray-400 font-nav"> 
+<body class="bg-gray-400 font-primary "> 
   <!-- header and navbar  section> -->
    <!-- mobile header -->
     <header class="bg-black border-b border-gray-600 h-14  flex md:hidden items-center justify-between   w-full  px-2        "">
@@ -78,25 +78,25 @@
           </nav>
     </header>
     <!-- desktop site header and nav  -->
- <header id="headerPC" class= "py-1 bg-black transition-all duration-200 ease-in  md:flex hidden h-screen px-2 fixed flex-col border-r border-gray-600 w-52">
+ <header id="headerPC" class= "py-1 bg-black transition-all relative  duration-200 ease-in  md:flex hidden h-screen px-2 fixed flex-col border-r border-gray-600 w-52">
   <!-- logoContainer -->
    <div id="logoPC"class="py-10 px-3 max-h-14 min-h-2">
-    <img id="logoImgPC" class="max-h-10 " src="src/assets/logoWhite.png" alt="logo">
+    <a href="#" ><img id="logoImgPC" class="max-h-10 " src="src/assets/logoWhite.png" alt="logo"></i> </a>
    </div>
    <nav id="navbarPC" class="min-h-60 flex flex-col justify-start flex-auto">
     <!-- Nav bar started -->
       <a id="homeBtnPC" href="#" class="rounded-lg min-h-9 max-h-9  my-2 flex font-bold transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!-- home element -->
         <i class="fa-solid fa-house p-2  text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Home" ></i>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 text-sm pt-3  ">
           <!-- element text -->
               Home
         </div>
       </a>
-      <a href="#" id="searchPC" class="rounded-lg  min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
+      <a href="#" id="searchPC" class="rounded-lg   min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!--search  element -->
         <i class="fa-solid fa-magnifying-glass p-2 text-xl font-light transition-all duration-200 ease-in  hover:scale-105" title="Seach" ></i>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1  p-2 pt-3 text-sm">
           <!-- element text -->
              Search
         </div>
@@ -104,7 +104,7 @@
       <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!-- explore element -->
         <i class="fa-regular fa-compass p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
               Explore
         </div>
@@ -114,7 +114,7 @@
         <span class="material-symbols-outlined p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Reels" >
           movie
           </span>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
             Reel
         </div>
@@ -124,7 +124,7 @@
      <i class="fa-brands fa-facebook-messenger p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 block  relative" title="messages"></i>
         <!-- message counter -->
         <span id="messagebubble"  class="min-h-4 mim-w-4 max-h-4 p-1 font-bold max-w-4 text-[0.5rem] absolute bg-red-600 top-1 left-7  flex items-center justify-center rounded-full">1</span>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
           Messages
         </div>
@@ -132,7 +132,7 @@
       <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!-- notification element -->
         <i class="fa-regular fa-heart p-2 text-xl transition-all duration-200 ease-in  hover:scale-105" title="Notifications" ></i>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
            Notifications
         </div>
@@ -140,7 +140,7 @@
       <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!-- create element -->
         <i class="fa-regular fa-square-plus p-2 text-xl transition-all duration-200 ease-in  hover:scale-105 " title="Explore" ></i>
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
               Create
         </div>
@@ -148,31 +148,98 @@
 
       <a href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
         <!-- profile element -->
-       <img src="src/assets/user.jpg" alt="user-image" class="h-9 w-9 p-1 transition-all duration-200 ease-in - hover:scale-105 rounded-full" title="Profile" >
-        <div class="font-nav flex-1 p-2 pt-3 text-s">
+       <img src="src/assets/user.jpg" alt="user-image" style="z-index: 100;" class="h-9 w-9 p-1 transition-all duration-200 ease-in - hover:scale-105 rounded-full" title="Profile" >
+        <div class="font-nav flex-1 p-2 pt-3 text-sm">
           <!-- element text -->
              Profile
         </div>
       </a>
-  
+   
      
+   <!-- saeach bar pc started -->
+   
+    <div id="searchBarDivPC" class="absolute hidden w-96  px-2 h-full z-50 s top-0 left-12 bg-black ">
+      <!-- search bar pc input text -->
+       <div class=" h-36 flex flex-col justify-between items-start py-2">
+       
+      <div class="p-2">
+        <H1 class="font-bold text-white text-3xl ">Search</H1> 
+      </div>
+       <!-- search -->
+       <div id="searchPC" class="rounded-lg min-h-9 max-h-9 py-3 px-3 min-w-56 w-full flex bg-zinc-800 justify-between relative items-center">
+        <label id="searchIconPC" for="searchInput">  <i class="fa-solid fa-magnifying-glass text-sm text-gray-500 max-w-3 m-1"></i></label>
+        <input type="text" class="bg-transparent text-left px-2 flex-grow outline-none text-white text-sm" placeholder="Search" id="searchInputPC" >
+        <div id="xIconSearchPC" class=" hidden justify-center items-center bg-slate-500 z-50 rounded-full max-h-4 max-w-4 absolute min-h-4 cursor-pointer min-w-4 text-gray-800 text-[0.7rem] right-5">x</div>
+      </div>
+     </div>
+     <hr>
+        <!-- seach outut  -->
+      <div id="searchOutputPC">
+        <H1 class="font-bold text-white text-3xl ">Search</H1> 
+        
+      </div>
+
+    </div>
+<!-- search bar pc ended -->
+
+
+    <!-- Notifications BAR  -->
+    <div id="notificationBarPC" class="absolute w-96  px-2 h-full z-50 text-white flex-col flex top-0 left-12 bg-black ">
+      <!-- search bar pc input text -->
+       <div class=" h-20  border flex flex-col justify-between items-start py-2 my-2">
+         
+         <!-- heading tag -->
+      <div class="p-2">
+        <H1 class="font-bold text-white text-3xl ">Notifications</H1> 
+      </div>
+      <!-- notifications -->
+       <div class="flex flex-col gap-2">
+        <!-- time -->
+          <div>
+            Yesterday
+          </div>
+          <!-- notification -->
+           <div class="flex items-center flex-col">
+         </div> <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 border "  src="" alt="profile Picture">
+          </a></div>
+            <!-- useridCaption -->
+          <div>
+           <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
+          <span  class="font-bold  text-white text-sm">vishal kumar <span  class="text-slate-500  font-light"><!--uploaded ago--> .8 h </span> <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+          <span class="text-white text-[0.700rem] font-light">Live in Agra </span>
+          
+           </a>
+           </div>
+           <!-- notification photo -->
+                <div>
+                        <img src="" alt="" class="h-16 w-16 min-w-16 border min-h-16">
+                  </div>
+           </div>
+
+
+       </div>
+
+    </div>
+  
+    
     
     </nav>
     <a id="morePC" href="#" class="rounded-lg min-h-9 max-h-9  flex my-2 transition-all duration-200 ease-in  hover:bg-zinc-900 items-center text-white justify-evenly">
       <!--more options element -->
       <i class="fa-solid fa-bars p-2 text-2xl justify-self transition-all duration-200 ease-in  hover:scale-105  " title="More" ></i>
-      <div class="font-nav flex-1 p-2 pt-3 text-s">
+      <div class="font-nav flex-1 p-2 pt-3 text-sm">
         <!-- element text -->
           More
       </div>
     </a>
- </header>
+ 
+  </header>
 
 <!-- mian page -->
- <main class="bg-black h-screen md:h-full md:absolute md:top-0  md:left-52 md:max-w-3xl md:px-20 overflow-y-scroll">
+ <main class="bg-black h-screen md:h-full md:absolute  md:top-0  md:left-52 md:max-w-3xl md:px-20 overflow-y-scroll">
 <!-- userImageSlider -->
 
-<section id="userImageSliderSection" class="h-20 w-full p-2 px-4 max-h-20 overflow-hidden box-border bg-black flex  relative items-center md:mt-4 ">
+<section id="userImageSliderSection" class="h-20 w-full p-2 px-4 max-h-20 overflow-hidden box-border bg-black flex  items-center md:mt-4 ">
   <div id="nextPrevBtn"> 
    <span id="userImagePrev" class="hidden"> > </span>
     <span id="userImageNext" class="hidden"> > </span>
@@ -189,78 +256,184 @@
 
    
   </section>
-  <section id="postSection" class="w-full min-h-full  px-8 mt-3 pt-4" >
+  <section id="postSection" class="w-full min-h-full md:px-16 px-8 mt-3 pt-4" >
     <!-- post cards -->
-    <div class="bg-black min-h-screen p-2 px-4 my-2 border ">
+    <div class="bg-black min-h-screen p-2 px-4 my-2 border min-w-full">
       <!-- user details Section -->
        <div class="flex justify-between items-center md:px-2 h-12">
-              <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
+              <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="" alt="profile Picture">
               </a>
                 <!-- useridCaption -->
               
                <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
-              <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
-              <span class="text-white text-[0.700rem] font-light">Live in agra </span>
+              <span  class="font-bold  text-white text-sm">vishal kumar <span  class="text-slate-500  font-light"><!--uploaded ago--> .8 h </span> <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+              <span class="text-white text-[0.700rem] font-light">Live in Agra </span>
               
                </a>
             <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
            
        </div>
+       <!-- user profile section end -->
           <!-- img vdo section  -->
-           <div class="border  min:h-72 flex justify-center px-3 py-0">
-            <img src="https://picsum.photos/200/300" alt="">
+           <div class="border  min-h-[350px] h-full max-h-screen overflow-hidden items-center max-w-[600px] flex justify-center px-3 py-0">
+            <img class="max-w-full max-full object-contain w-full h-auto text-white" src="" alt="Can't Load">
+          
 
            </div>
-           post detais section
+           <!-- post detais section -->
+            <div class= " ">
 
-  </div><div class="bg-black min-h-screen p-2 px-4 my-2 border ">
-    <!-- user details Section -->
-     <div class="flex justify-between items-center md:px-2 h-12">
-            <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
-            </a>
-              <!-- useridCaption -->
-            
-             <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
-            <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
-            <span class="text-white text-[0.700rem] font-light">Live in agra </span>
-            
-             </a>
-          <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
-         
-     </div>
-        <!-- img vdo section  -->
-         <div>
+              <!-- like share save area  -->
+               <div class=" h-10 flex items-center justify-between">
+                
 
-         </div>
-         post detais section
+                 <!-- like share coment expect save -->
+                      <div class="px-1 flex gap-3 py-0.5">
+                        <i class="fa-regular object-contain fa-heart text-white font-semibold text-2xl cursor-pointer hover:text-slate-500"></i> 
+                        <i class="fa-regular object-contain fa-comment text-white font-semibold text-2xl cursor-pointer transform scale-x-[-1]  hover:text-slate-500"></i>
+                        <i class="fa-regular object-contain fa-paper-plane text-white font-semibold text-2xl cursor-pointer hover:text-slate-500"></i>
+                      </div>
+                      <!-- save                     -->
+                      <DIV class=" px-3 py-0.5">
+                        <i class="fa-regular fa-bookmark  object-contain text-white font-semibold text-2xl  cursor-pointer hover:text-slate-500"></i>
+                        
+                      </DIV>
 
-</div><div class="bg-black min-h-screen p-2 px-4 my-2 border ">
-  <!-- user details Section -->
-   <div class="flex justify-between items-center md:px-2 h-12">
-          <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="profile Picture">
-          </a>
-            <!-- useridCaption -->
-          
-           <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
-          <span  class="font-bold  text-white text-sm">vishal kumar <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
-          <span class="text-white text-[0.700rem] font-light">Live in agra </span>
-          
-           </a>
-        <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
-       
-   </div>
-      <!-- img vdo section  -->
-       <div>
+               </div>
+               <!-- like count and like detilas -->
+                <div  class=" h-7 flex items-center px-1"> 
+                  <span class="block text-white py-x text-sm" >Liked by <strong> ajsaykumar__</strong>  and 29<strong> other</strong> </span>
 
+          </div>
+          <!-- like comment share end -->
+                <!-- description  -->
+                 <div class="h  font-light pr-1 overflow-hidden text-sm pb-1" >
+                  <!-- username -->
+                  <article class="text-white relative  mr-2 "><span class="clear-left">vishalkumar</span>
+                    <!-- description -->
+                          <p class="text-white pr-14 clear-both ">
+                            <!-- More button --> 
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima facilis voluptas, quas consequuntur deserunt omnis nihil fuga laborum, eos hic quis nam temporibus, illo suscipit quia laboriosam molestiae earum ab!hello i am  vishal kumar i am thrild to annouse the that i am working on clone of insagram
+                          </p>
+                        </span>
+                          <span class="text-slate-400 text-sm block text-nowrap w-fit  right-8 bottom-1 cursor-pointer">
+                           ... more
+                          </span>
+                          </article>
+                          
+                 </div>
+                 <!-- description end -->
+                 <!-- comment  -->
+                  
+                  <div class=" text-slate-500 p-1 text-sm">
+                    <!-- view comment  -->
+                     <div class="cursor-pointer">
+                      <span>  view all 2 comments </span>
+                     </div>
+                    <!-- comment input -->
+                     <div>
+                     <input type="text"  class="bg-transparent py-2  w-full placeholder:text-slate-600 outline-none"placeholder="Add a comment..">
+                     </div>
+                  </div>
+
+                  
+                </div>
+                <!-- post details section end -->
+                <!-- comment end -->
+              </div>
+              <!-- postcard end -->
+               <!-- postcard started -->
+    <div class="bg-black min-h-screen p-2 px-4 my-2 border min-w-full">
+      <!-- user details Section -->
+       <div class="flex justify-between items-center md:px-2 h-12">
+              <a href=""><img class="min-h-10 min-w-10 max-h-10 max-w-10 rounded-full md:m-2 md:mx-3 block" src="" alt="profile Picture">
+              </a>
+                <!-- useridCaption -->
+              
+               <a href="" class="flex flex-col items-start  justify-center h-10 min-w-40 ml-2 overflow-hidden">
+              <span  class="font-bold  text-white text-sm">vishal kumar <span  class="text-slate-500  font-light"><!--uploaded ago--> .8 h </span> <i class="fa-solid fa-check bg-blue-700  min-h-4 min-w-4 text-center  rounded-full text-[0.400rem]"></i></span>
+              <span class="text-white text-[0.700rem] font-light">Live in Agra </span>
+              
+               </a>
+            <i class="fa-solid fa-ellipsis text-white justify-start flex-grow text-right relative cursor-pointer"></i>
+           
        </div>
-       post detais section
+       <!-- user profile section end -->
+          <!-- img vdo section  -->
+           <div class="  min-h-[350px] h-full max-h-screen overflow-hidden items-center max-w-[600px] flex justify-center px-3 py-0">
+            <img class="max-w-full max-full object-contain w-full h-auto text-white" src="" alt="Can't Load">
+          
 
-</div>
+           </div>
+           <!-- post detais section -->
+            <div class= " ">
+
+              <!-- like share save area  -->
+               <div class=" h-10 flex items-center justify-between">
+                
+
+                 <!-- like share coment expect save -->
+                      <div class="px-1 flex gap-3 py-0.5">
+                        <i class="fa-regular fa-heart text-white font-semibold text-2xl cursor-pointer hover:text-slate-500"></i> 
+                        <i class="fa-regular fa-comment text-white font-semibold text-2xl cursor-pointer transform scale-x-[-1]  hover:text-slate-500"></i>
+                        <i class="fa-regular fa-paper-plane text-white font-semibold text-2xl cursor-pointer hover:text-slate-500"></i>
+                      </div>
+                      <!-- save                     -->
+                      <DIV class=" px-3 py-0.5">
+                        <i class="fa-regular fa-bookmark  text-white font-semibold text-2xl  cursor-pointer hover:text-slate-500"></i>
+                        
+                      </DIV>
+
+               </div>
+               <!-- like count and like detilas -->
+                <div  class=" h-7 flex items-center px-1"> 
+                  <span class="block text-white py-x text-sm" >Liked by <strong> ajsaykumar__</strong>  and 29<strong> other</strong> </span>
+
+          </div>
+          <!-- like comment share end -->
+                <!-- description  -->
+                 <div class="h  font-light pr-1 overflow-hidden text-sm pb-1" >
+                  <!-- username -->
+                  <article class="text-white relative  mr-2 "><span class="clear-left">vishalkumar</span>
+                    <!-- description -->
+                          <p class="text-white pr-14 clear-both ">
+                            <!-- More button --> 
+                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima facilis voluptas, quas consequuntur deserunt omnis nihil fuga laborum, eos hic quis nam temporibus, illo suscipit quia laboriosam molestiae earum ab!hello i am  vishal kumar i am thrild to annouse the that i am working on clone of insagram
+                          </p>
+                        </span>
+                          <span class="text-slate-400 text-sm block text-nowrap w-fit  right-8 bottom-1 cursor-pointer">
+                           ... more
+                          </span>
+                          </article>
+                          
+                 </div>
+                 <!-- description end -->
+                 <!-- comment  -->
+                  
+                  <div class=" text-slate-500 p-1 text-sm">
+                    <!-- view comment  -->
+                     <div class="cursor-pointer">
+                      <span>  view all 2 comments </span>
+                     </div>
+                    <!-- comment input -->
+                     <div>
+                     <input type="text"  class="bg-transparent py-2  w-full placeholder:text-slate-600 outline-none"placeholder="Add a comment..">
+                     </div>
+                  </div>
+
+                  
+                </div>
+                <!-- post details section end -->
+                <!-- comment end -->
+              </div>
+              <!-- postcard end -->
+  
 
   </section>
   
 
  </main>
+ <script src="src/jsFiles/Post.js"></script>
 <script src="src/app.js"></script>
 </body>
 </html>

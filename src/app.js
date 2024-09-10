@@ -81,7 +81,7 @@ document.addEventListener('click', (event) => {
         searchPC.style.background = "";
         searchPC.style.border = "";
         searchPC.style.padding = "";
-        logoPC.innerHTML =`<a href="#" ><img id="logoImgPC" class="max-h-10 " src="src/assets/logoWhite.png" alt="logo"></i> </a>`
+        logoPC.innerHTML =`<a href="#" ><img id="logoImgPC" class="max-h-10 mb-6 " src="src/assets/logoWhite.png" alt="logo"></i> </a>`
         
         navElementsText.forEach((e) => {
             e.style.display = "";
@@ -93,37 +93,20 @@ document.addEventListener('click', (event) => {
     }
 });
 
-
-/* <section id="userImageSliderSection" class="h-20 p-2 px-4 max-h-20 bg-black flex relative items-center">
-  <div id="nextPrevBtn"> 
-   <span id="userImagePrev" class="hidden"> > </span>
-    <span id="userImageNext" class="hidden"> > </span>
-
-   </div>
-
-    <div class="flex flex-col item-center m-2">
-      <!-- user 1-->
-    <img class="h-12 w-12 rounded-full border border-red-800 border-solid border-double" src="https://xsgames.co/randomusers/avatar.php?g=male" alt="">
-    <span class="text-white text-[0.600rem]">user-name</span>
-    
-  </div>
-     
-  </section> */
-
 const userImageSliderSection =document.getElementById('userImageSliderSection');
-console.log(userImageSliderSection);
+
 const userObj= [
     {
         username : 'mahesh-kumar',
-        imageURL: 'https://xsgames.co/randomusers/avatar.php?g=male'
+        imageURL: ''
     },
     {
         username : 'diya0787agrawal',
-        imageURL: 'https://xsgames.co/randomusers/avatar.php?g=female'
+        imageURL: ''
     },
     {
         username:'ccrtahjh',
-        imageURL:'https://xsgames.co/randomusers/avatar.php?g=pixel'
+        imageURL:''
     }
 ];
 
@@ -132,11 +115,11 @@ for(let i=0;i<5;i++){
     userImageSliderSection.innerHTML += ` <div class="flex flex-col item-center m-0.5 p-2 min-h-16 min-w-16 justify-center overflow-hidden" >
       <!-- user 1-->
     <img class="min-h-12 min-w-12 rounded-full border border-red-800 border-double" src="${user.imageURL}" alt="">
-    <span class="text-white text-[0.600rem] text-center flex-nowrap text-nowrap pt-0.5 flex justify-center items-center">${user.username}</span>
+    <span class="text-white text-[0.700rem] text-center flex-nowrap text-nowrap pt-0.5 flex justify-center items-center">${user.username}</span>
     
   </div>`
     )
 }
 
-///userr section
-
+/////
+const searchBarDivPC= document.querySelector('#searchBarDivPC');

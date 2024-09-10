@@ -2,6 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-   .transition-slow-for{
-     transform:all 2s ease-in ;
-    }
+  

@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily:{
         'nav': ['Roboto', 'sans-serif'],
+        'primary': ['Martel', 'sans-serif'],
+        
         
       }
 
